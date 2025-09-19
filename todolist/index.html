@@ -4,6 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: rgba(148, 155, 161, 0.253);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+            padding: 1rem;
+            flex-direction: column;
+        }
+
+        .task-item {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            height: 10rem;
+            width: 35rem;
+            border-radius: 1rem;
+            box-shadow: 5px 10px 15px -3px rgba(0, 0, 0, 0.1), 5px 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1rem;
+            transition:  transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .task-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .task-item h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #172b4d;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .task-item p {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            color: #5e6c84;
+        }
+
+        .task-status {
+            display: inline-block;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 2rem;
+            width: 8rem;
+            padding: 1.5px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .status-pendente {
+            background-color: #eb5757;
+        }
+
+        .status-andamento {
+            background-color: #f2c94c;
+        }
+
+        .status-concluida {
+            background-color: #27ae60;
+        }
+    </style>
 </head>
 <body>
     <div class="task-item">
