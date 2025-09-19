@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,87 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .event-content {
+            background-color: white;
+            width: 35rem;
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 2rem;
+        }
+
+        .event-content h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a90e2;
+            color: white;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
+
+        .event-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .event-description {
+            width: 80%;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .event-details {
+            margin-bottom: 25px;
+        }
+
+        .button-link {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #50c878;
+            color: white;
+            font-weight: bold;
+            border-radius: 2rem;
+            padding: 10px;
+            transition:  transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .button-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
+
 <body>
     <div class="event-content">
-
-        <div class="event-title">
-            <h1>Workshop Online Gratuito</h1>
-        </div>
-
+        <h1>Workshop Online Gratuito</h1>
         <div class="event-body">
 
             <p class="event-description">
-                Aprenda a criar layouts incríveis e responsivos com as técnicas mais atuais de CSS, como Flexbox, Grid e Animações.
+                Aprenda a criar layouts incríveis e responsivos com as técnicas mais atuais de CSS, como Flexbox, Grid e
+                Animações.
             </p>
 
             <ul class="event-details">
@@ -32,4 +102,5 @@
         </div>
     </div>
 </body>
+
 </html>
